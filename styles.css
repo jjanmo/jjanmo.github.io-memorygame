@@ -1,201 +1,175 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
-
 .wrapper {
-    width: 85%;
-    /* height: 95vh; */
-    background-color: #eee;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    margin: 10px auto;
-    padding: 1rem 0;
+	width: 85%;
+	background-color: #eee;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	margin: 10px auto;
+	padding: 1rem 0;
 }
-
 .select-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0.5rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0.5rem 0;
 }
-
 select {
-    text-decoration: none;
-    outline: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: 600;
+	text-decoration: none;
+	outline: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-weight: 600;
 }
-
 option {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
-
 .msg {
-    width: 35%;
-    height: 1.5rem;
-    background-color: #34495e;
-    color: white;
-    font-weight: 600;
-    border-radius: 5px;
-    text-align: center;
-    padding: 2px 5px;
+	width: 35%;
+	height: 1.5rem;
+	background-color: #34495e;
+	color: white;
+	font-weight: 600;
+	border-radius: 5px;
+	text-align: center;
+	padding: 2px 5px;
 }
 .button {
-    all: unset;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px;
+	all: unset;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: white;
+	margin-left: 10px;
 }
 .button:active {
-    transform: scale(0.95);
+	transform: scale(0.95);
 }
 .start-button {
-    background-color: #27ae60;
+	background-color: #27ae60;
 }
 .rank-button {
-    background-color: #2980b9;
+	background-color: #2980b9;
 }
 
 .record-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 1rem;
 }
 
 .timer {
-    font-size: 25px;
-    font-weight: 700;
+	font-size: 25px;
+	font-weight: 700;
 }
-
 .card-board {
-    width: 95%;
-    /* height: 73vh; */
-    margin: auto;
-    padding: 1rem 0;
-    background-color: #fff;
-    border-radius: 5px;
-    justify-content: center;
-    grid-row-gap: 1rem;
-    justify-items: center;
-    align-self: center;
-    display: grid;
+	width: 95%;
+	margin: auto;
+	padding: 1rem 0;
+	background-color: #fff;
+	border-radius: 5px;
+	justify-content: center;
+	grid-row-gap: 1rem;
+	justify-items: center;
+	align-self: center;
+	display: grid;
 }
-
-/* 난이도에 따라서 카드배치 달라짐 */
-/* 4*4 16장-8종류*/
 .basic {
-    grid-template-columns: repeat(4, 130px);
+	grid-template-columns: repeat(4, 130px);
 }
-/* 4*5 20장-10종류 */
 .intermediate {
-    grid-template-columns: repeat(5, 130px);
+	grid-template-columns: repeat(5, 130px);
 }
-/* 4*6 24장-12종류 */
 .advanced {
-    grid-template-columns: repeat(6, 130px);
+	grid-template-columns: repeat(6, 130px);
 }
-
 .scene {
-    width: 100px;
-    height: 120px;
-    perspective: 280px;
+	width: 100px;
+	height: 120px;
+	perspective: 280px;
 }
-
 .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.6s ease-in-out;
-    cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.6s ease-in-out;
+	cursor: pointer;
 }
-
 .cardface {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
 }
 
 .front {
-    transform: rotateY(180deg);
-    background-repeat: no-repeat;
-    /* background-position: 0 0; */
+	transform: rotateY(180deg);
+	background-repeat: no-repeat;
 }
-
 .back {
-    background-image: linear-gradient(
-        45deg,
-        #ee617d 25%,
-        #3d6f8e 25%,
-        #3d6f8e 50%,
-        #ee617d 50%,
-        #ee617d 75%,
-        #3d6f8e 75%,
-        #3d6f8e 100%
-    );
-    background-size: 19.8px 19.8px;
-    /* transform: rotateY(180deg); */
+	background-image: linear-gradient(
+		45deg,
+		#ee617d 25%,
+		#3d6f8e 25%,
+		#3d6f8e 50%,
+		#ee617d 50%,
+		#ee617d 75%,
+		#3d6f8e 75%,
+		#3d6f8e 100%
+	);
+	background-size: 19.8px 19.8px;
 }
-
 .card.isFlipped {
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
-
-/* score modal */
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: modal 0.5s ease-in-out;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: modal 0.5s ease-in-out;
 }
 .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    width: 100%;
-    height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
-
 .modal-content {
-    position: relative;
-    width: 30%;
-    height: 20%;
-    padding: 0 10px;
-    color: #fff;
-    background-color: #0984e3;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 3px solid #2d3436; */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	position: relative;
+	width: 30%;
+	height: 20%;
+	padding: 0 10px;
+	color: #fff;
+	background-color: #0984e3;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-
 .hidden {
-    display: none;
+	display: none;
 }
-
 @keyframes modal {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
