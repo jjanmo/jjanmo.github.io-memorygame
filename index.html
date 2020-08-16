@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Memory Game</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="select-container">
+				<div class="selectbox">
+					<select name="card-content" id="js-card-content">
+						<option value="">card-content</option>
+						<option value="cute-animals">cute animals</option>
+						<option value="epl-logos">English Premier League logos</option>
+						<option value="smile-emoji">smile emoji</option>
+					</select>
+					<select name="difficulty" id="js-difficulty">
+						<option value="">difficulty</option>
+						<option title="16 Cards" value="basic">basic</option>
+						<option title="20 Cards" value="intermediate">intermediate </option>
+						<option title="24 Cards" value="advanced">advanced</option>
+					</select>
+				</div>
+				<div class="msg" id="js-msg"></div>
+				<div class="button-box">
+					<button class="button start-button" id="js-start-button">
+						start
+					</button>
+				</div>
+			</div>
+			<div class="record-container">
+				<div class="timer" id="js-timer">00:00</div>
+			</div>
+			<div class="card-board" id="js-card-board"></div>
+		</div>
+		<div class="modal hidden" id="js-modal">
+			<div class="overlay" id="js-modal-overlay"></div>
+			<div class="modal-content" id="js-modal-content"></div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
